@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/radarsu/validate-polish/" target="blank"><img src="https://raw.githubusercontent.com/radarsu/validate-polish/master/assets/logo.png" alt="validate-polish" /></a><br/>
+    <a href="https://github.com/damiandragowski/validate-polish-ext/" target="blank"><img src="https://raw.githubusercontent.com/damiandragowski/validate-polish-ext/master/assets/logo.png" alt="validate-polish-ext" /></a><br/>
     <strong>Simple validation of PESEL, NIP, REGON, identity card.</strong>
 </p>
 
@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-	<a href="https://www.npmjs.com/package/validate-polish" target="_blank" alt="npm validate-polish"><img src="https://img.shields.io/npm/v/validate-polish.svg" alt="npm" /></a>
-	<img src="https://img.shields.io/github/license/radarsu/validate-polish.svg" />
-	<img src="https://img.shields.io/github/stars/radarsu/validate-polish.svg" />
-	<a href="https://twitter.com/radarsujs"><img src="https://img.shields.io/twitter/url/https/github.com/radarsu/validate-polish.svg?style=social" /></a>
+	<a href="https://www.npmjs.com/package/validate-polish-ext" target="_blank" alt="npm validate-polish-ext"><img src="https://img.shields.io/npm/v/validate-polish-ext.svg" alt="npm" /></a>
+	<img src="https://img.shields.io/github/license/damiandragowski/validate-polish.svg" />
+	<img src="https://img.shields.io/github/stars/damiandragowski/validate-polish.svg" />
+	<a href="https://twitter.com/radarsujs"><img src="https://img.shields.io/twitter/url/https/github.com/damiandragowski/validate-polish.svg?style=social" /></a>
 </p>
 
 ## Description
