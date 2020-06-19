@@ -1,3 +1,19 @@
+const checksum = ( number:string, weights: number[] ) => {
+    const max = number.length - 1;
+    let sum = 0;
+        
+    for( let i = 0; i < max; i++ ) {
+        const n = parseInt( number[i], 10 );
+        sum += n * weights[i];
+    }
+        
+    const resultSum = ( sum % 11 ) !== 10 ? sum % 11 : 0;
+        
+    const lastDigit = parseInt( number.slice( -1 ), 10 );
+
+    return resultSum === lastDigit;
+};
+
 export const validatePolish = {
     /**
      * Validation of PESEL.
@@ -48,23 +64,20 @@ export const validatePolish = {
      * @returns
      */
     regon(regon: string) {
-        const reg = /^[0-9]{9}$/;
+        const reg = /^[0-9]{9,14}$/;
         if (reg.test(regon) === false) {
             return false;
         } else {
-
-            const dig = ('' + regon).split('');
-            let control = (8 * parseInt(dig[0], 10) + 9 * parseInt(dig[1], 10) + 2 * parseInt(dig[2], 10) + 3 * parseInt(dig[3], 10) + 4 * parseInt(dig[4], 10) + 5 * parseInt(dig[5], 10) + 6 * parseInt(dig[6], 10) + 7 * parseInt(dig[7], 10)) % 11;
-            if (control === 10) {
-                control = 0;
+            const weights9: number[] = [8,9,2,3,4,5,6,7];
+            const weights14: number[] = [2,4,8,5,0,9,7,3,6,1,2,4,8];
+            
+            if ( regon.length === 9 ) {
+                return checksum( regon, weights9 );
             }
-
-            if (parseInt(dig[8], 10) === control) {
-                return true;
-            } else {
-                return false;
+            else {
+                return checksum( regon.slice( 0, 9 ), weights9 ) 
+                    && checksum( regon, weights14 );
             }
-
         }
     },
     /**

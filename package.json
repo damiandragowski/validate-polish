@@ -1,11 +1,11 @@
 {
-  "name": "validate-polish",
-  "version": "1.1.1",
+  "name": "validate-polish-ext",
+  "version": "1.0.0",
   "description": "Utility library for validation of PESEL, NIP, REGON, identity card etc. Aimed at mostly at Polish enviroment. [Polish] Walidacja numerów pesel, nip, regon, dowodu osobistego.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/radarsu/validate-polish",
+  "repository": "https://github.com/damiandragowski/validate-polish-ext",
   "license": "MIT",
   "keywords": [],
   "scripts": {

@@ -11,7 +11,7 @@
 	<a href="https://www.npmjs.com/package/validate-polish-ext" target="_blank" alt="npm validate-polish-ext"><img src="https://img.shields.io/npm/v/validate-polish-ext.svg" alt="npm" /></a>
 	<img src="https://img.shields.io/github/license/damiandragowski/validate-polish.svg" />
 	<img src="https://img.shields.io/github/stars/damiandragowski/validate-polish.svg" />
-	<a href="https://twitter.com/radarsujs"><img src="https://img.shields.io/twitter/url/https/github.com/damiandragowski/validate-polish.svg?style=social" /></a>
+	<a href="https://twitter.com/damiandragowski"><img src="https://img.shields.io/twitter/url/https/github.com/damiandragowski/validate-polish.svg?style=social" /></a>
 </p>
 
 ## Description
@@ -21,7 +21,7 @@ Utility library for validation of PESEL, NIP, REGON, identity card etc. Aimed at
 ## Installation
 
 ```sh
-npm i validate-polish
+npm i validate-polish-ext
 ```
 
 ## Features
@@ -29,12 +29,12 @@ npm i validate-polish
 - <strong>Fast, lightweight, no dependencies</strong> required.
 - <strong>PESEL</strong> validation.
 - <strong>NIP</strong> validation.
-- <strong>REGON</strong> validation.
+- <strong>REGON ( 9, 14 )</strong> validation.
 - <strong>Identity card</strong> ([Polish] <strong>dowód osobisty</strong>) validation.
 
 ## Usage
 ```ts
-import { validatePolish } from 'validate-polish';
+import { validatePolish } from 'validate-polish-ext';
 
 if (!validatePolish.pesel(`92060512181`)) {
     throw new Error(`Invalid pesel.`);
